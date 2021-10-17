@@ -1,0 +1,29 @@
+@import "../global.scss";
+
+.list-group{
+    // margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    
+    .list-group-item{
+        font-size: 1.2rem;
+        margin-right: 50px;
+        padding: 7px;
+        font-family: PoppinsLight;
+        border-radius: 10px;
+        cursor: pointer;  
+        
+        @include mobile{
+            font-size: 1rem;
+            margin-right: 20px;
+        }
+
+        &:hover{
+            background-color: #fbba00;
+            color: #fff;
+        }
+       
+    }
+
+}

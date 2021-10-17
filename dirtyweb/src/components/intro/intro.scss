@@ -1,0 +1,69 @@
+@import "../../global.scss";
+
+
+    
+    // align-content: center;
+    // width:100vw;
+    // height: 85vh;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    // z-index:4;
+    
+    // background-image: url("../../bg.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // display: flex;
+    // overflow-x: hidden;
+    // justify-content: center;
+    
+    
+    .lateral{
+        position: absolute;
+        // background-color: red;
+        // width:130px;
+        height: 100vh;
+        z-index: 3;
+        right: 0;
+        // background-color: white;
+        opacity: 0.9;
+        
+    
+        .lateral__caja{
+
+            // padding: 0 auto;
+        
+            .lateral__texto{
+                
+                margin-top: 180px;
+                font-family: "PoppinsLight";
+                // width:100px;
+                transform: rotate(-90deg);
+                font-size:1rem;
+            }
+            .lateral__icons{
+                margin-top:40px;
+                padding: 46px;
+                // width:100px;
+                // height: 300px;
+                
+                .icon{
+                    list-style: none;
+                    transition: all 0.3s ease-in-out;
+                    height:30px;
+                    width:30px;
+                    margin-top: 35px;
+                    &:hover{
+                        transform: rotate(45deg);
+                    }
+                    .img__icon{
+                        transform: scale(1);
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+   

@@ -1,0 +1,121 @@
+
+@import "../../global.scss";
+
+.portafolio{
+  
+    .piercings {
+        // background-repeat: no-repeat;
+        margin-top: 80px;
+        height: 438px;
+        width: 100%;
+        background-image: url(./../../unsplash.png);
+        background-size: cover;
+        background-position: left;
+            @include mobile{
+                background-position: right;
+                background-size: 90rem;
+                background-repeat: no-repeat;
+            }
+
+        .piercings__texto {
+            
+            width: 100%;
+            padding-top: 60px;
+            padding-left: 340px;
+                @include mobile{
+                    padding-left: 20px;
+                }
+                img{
+                    transform: scale(1);
+                }
+                @include mobile{
+                    transform: scale(0.8)
+                }
+
+            .piercings__botones {
+                padding-top: 50px;
+
+                button {
+                    margin-right: 20px;
+                    cursor: pointer;
+                    background-color: #F7F8FC;
+                    border: none;
+                    box-shadow: 2px 2px 20px rgba(36, 36, 36, 0.589);
+                    padding: 12px 35px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-family: BebasBold;
+                    color: DarkGris;
+                    font-size: 1.2rem;
+
+                }
+            }
+        }
+
+        // height: 438px;
+        // background-image: url(./../img/pier.png);
+        // background-size: left;
+    }
+    .contacto {
+        .primero {
+            background-color: #ffffff;
+
+
+
+            .datos {
+                padding: 100px 0 50px 0;
+                margin: 0 auto;
+
+
+                display: flex;
+                max-width: 1240px;
+                justify-content: space-around;
+                @include mobile{
+                    flex-direction: column;
+                }
+
+                .dato {
+                    text-align: center;
+
+                    img {
+                        transform: scale(0.4);
+                        transition: all 0.9s ease-in-out;
+                        &:hover{
+                            transform:scale(0.6);
+                        }
+                    }
+
+                    p {
+                        font-family: PoppinsLight;
+                        opacity: 0.5;
+                        padding-bottom: 10px;
+                    }
+
+                    span {
+                        font-family: BebasBold;
+                        list-style: none;
+                    }
+                }
+            }
+
+            .redes__sociales {
+                padding: 40px 0 40px 0;
+
+                .red__social {
+                    display: flex;
+                    list-style: none;
+                    margin: 0 auto;
+
+                    display: flex;
+                    max-width: 340px;
+                    justify-content: space-around;
+
+                    .redes__icons {
+                        transform: scale(0.7);
+                    }
+                }
+            }
+
+        }
+     }
+}

@@ -1,0 +1,97 @@
+@import "../../global.scss";
+
+.testimonials{
+
+    background-image: url(../../rename.png);
+    background-repeat: no-repeat;
+    background-position: top ;
+    
+   display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+   
+    .testimonials__title{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        .title{
+            
+             font-family: BebasBold;
+             font-size: 3.7rem;
+             padding: 60px 0 30px 0;
+             letter-spacing: 15px;
+             @include mobile{
+                 font-size: 2rem;
+             }
+        }
+        .guion{
+            margin-top:50px;
+        }
+    }
+    .container{
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+            @include mobile{
+                margin-top: 1px;
+                display: block;
+                
+            }
+
+        .card{
+            transition: all 0.9s ease;
+            text-align: center;
+            width: 350px;
+            margin: 25px;
+            
+            border-radius:10px;
+            box-shadow: 0px 0px 17px -8px black;
+            display: flex;
+            
+            padding: 50px 40px;
+            font-family: PoppinsLight;
+            @include mobile{
+                margin: 27px;
+                width: 320px;
+            }
+            &:hover{
+                transform:scale(1.1);
+                @include mobile{
+                    transform:scale(1);
+                }
+            }
+            
+            h1{
+                color: #6b6b6b;
+                font-size: 1.4rem;
+                font-weight: 800;
+                letter-spacing:1px;
+            }
+            p{
+                color: #757575;
+                margin-bottom:10px;
+            }
+
+            
+
+            .card__wrapper{
+                .card__image{
+                   img{
+                       margin-bottom:17px;
+                       
+                   }
+                   .image__user{
+                    transform: scale(1)
+                }
+                    
+                }
+
+                
+            }
+        }
+    }
+}

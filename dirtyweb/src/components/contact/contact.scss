@@ -1,0 +1,121 @@
+@import "../../global.scss";
+
+.contact{
+    
+    // background-color: lightblue;
+    .contact__section{
+       
+        .banner__bg{
+            background-image: url(../../tatt.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        
+        .contact__title{
+            text-align: center;
+            h1{
+                font-family: BebasBold;
+                font-size: 4rem;
+                padding: 150px 0 70px 0;
+                letter-spacing: 15px;
+                @include mobile{
+                    padding-top: 50px;
+                    
+                }
+            }
+        }
+        form{
+            padding-top: 70px;
+            width: 550px;
+            margin: 0 auto ;
+            @include mobile{
+                padding: 20px;
+            }
+            // margin: auto;
+            input{
+                width: 100%;
+                padding: 25px ;
+                margin-bottom: 35px;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+                @include mobile{
+                    margin-bottom:20px;
+                }
+            }
+            #boton{ 
+                background-color: #fbba00;
+                font-family: BebasBold;
+                font-size: 1.5rem;
+                letter-spacing: 9px;
+                padding: 18px;
+                cursor: pointer;
+                transition: all 0.9s ease;
+
+                &:hover{
+                    background-color: $fuckgrey;
+                    color: whitesmoke;
+                    letter-spacing: 13px;
+                }
+            }
+        }
+    }
+        .contact__banner{
+            background-color: $fuckgrey;
+            .banner__wrapper{
+                list-style: none;
+                margin: 0 auto;
+                max-width: 1440px;
+                justify-content: space-around;
+                display: flex;
+                align-items: center;
+                @include mobile{
+                    display:block;
+                    text-align: center;
+                }
+                .barra__icon{
+                    img{
+                        transform: scale(0.5);
+                        opacity: 0.2;
+                        transition: all 0.9s ease;
+                        cursor: pointer;
+
+                        &:hover{
+                            opacity: 0.9;
+                            transform: scale(0.7)
+                        }
+                    }
+                }
+                #button{
+                    cursor: pointer;
+                    background-color: $fuckgrey;
+                    border: 1.5px solid #fbba00;
+                    padding: 10px 40px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-family: BebasBold;
+                    color: #fbba00;
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    transition: all 0.9s ease;
+                    &:hover {
+                        background-color: #fbba00;
+                        color: white;
+                    }
+                }
+            }
+        }
+        // .figure{
+        
+        //     position: relative;
+        //     top: -650px;
+        //     left: 1350px ;
+            
+        //     // background-color: red;
+        //     img{
+        //         transform: scale(1.3);
+        //     }
+        // }
+    }
+    
+}
+
+

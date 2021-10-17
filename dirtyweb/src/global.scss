@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    // overflow-x: hidden;
+    // overflow-x: hidden;
+}
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+
+
+$mainColor: #fbba00;
+$fuckgrey: #18191B;
+
+@font-face {
+    font-family: "BebasBold";
+    src: url(./text/BebasBold.otf);
+}
+
+@font-face {
+    font-family: "PoppinsLight";
+    src: url(./text/Poppins-Light.otf);
+}
+
+@font-face {
+    font-family: "DMSansRegular";
+    src: url(./text/DMSansRegular.ttf);
+}
